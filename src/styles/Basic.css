@@ -1,37 +1,88 @@
 .basic-information {
-  text-align: center;
-  margin-top: 100px;
-  padding: 0 20px;
+  max-width: 1100px;
+  margin: var(--section-spacing) auto 0;
+  padding: 0 24px;
+  text-align: left;
+}
+
+.basic-information h3 {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.basic-information {
+  position: relative;
+}
+
+.basic-information::before {
+  content: "";
+  position: absolute;
+  inset: 0 24px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: var(--radius);
+  background: linear-gradient(170deg, rgba(39, 53, 77, 0.8), rgba(30, 41, 59, 0.9));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.basic-information > * {
+  position: relative;
+  z-index: 1;
+}
+
+.basic-information {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .basic-information h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: var(--primary-color);
+  font-size: clamp(38px, 6vw, 62px);
+  margin-bottom: 12px;
+  color: var(--text);
 }
 
 .basic-information h2 {
   font-size: 24px;
-  color: var(--secondary-color);
-  margin-bottom: 20px;
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
 .basic-information p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  color: var(--text-color);
+  max-width: 700px;
+  margin: 0 0 26px;
+  color: var(--text-secondary);
 }
 
 .basic-information .buttons a {
-  margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
   padding: 10px 20px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid rgba(56, 189, 248, 0.55);
+  color: var(--primary);
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 999px;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .basic-information .buttons a:hover {
-  background-color: var(--primary-color);
-  color: var(--surface-color);
+  background-color: var(--primary);
+  color: #00111f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .basic-information {
+    margin-top: 5rem;
+    padding: 24px 16px;
+  }
+
+  .basic-information::before {
+    inset: 0 16px;
+  }
+
+  .basic-information h3 {
+    font-size: 16px;
+  }
 }

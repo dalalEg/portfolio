@@ -1,8 +1,17 @@
+import { motion } from "framer-motion";
 import { skills } from "../data/portfolioData";
 import "../styles/Skills.css";
+
 export default function Skills() {
   return (
-    <section id="skills" className="skills">
+    <motion.section
+      id="skills"
+      className="skills"
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.4 }}
+    >
       <h2>Skills</h2>
 
       <SkillCategory title="Languages" items={skills.languages} />
@@ -10,7 +19,7 @@ export default function Skills() {
       <SkillCategory title="Backend" items={skills.backend} />
       <SkillCategory title="Database" items={skills.database} />
       <SkillCategory title="Tools" items={skills.tools} />
-    </section>
+    </motion.section>
   );
 }
 

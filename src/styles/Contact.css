@@ -1,0 +1,39 @@
+.contact {
+  max-width: 1100px;
+  margin: var(--section-spacing) auto 5rem;
+  padding: 0 24px;
+}
+
+.contact h2 {
+  font-size: clamp(28px, 3vw, 36px);
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-card a {
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  border-radius: 999px;
+  padding: 10px 16px;
+  color: var(--primary);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  background: var(--primary);
+  color: #041321;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 5rem;
+    padding: 0 16px;
+  }
+}

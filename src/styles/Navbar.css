@@ -1,23 +1,64 @@
 .navbar {
+  position: sticky;
+  top: 12px;
+  z-index: 30;
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
   align-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
 }
 
 .logo {
   font-weight: bold;
-  font-size: 18px;
-  color: var(--primary-color);
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--text-muted-color);
-  font-size: 14px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--text);
+  background: rgba(56, 189, 248, 0.18);
+}
+
+.nav-links a.active {
+  color: #00111f;
+  background: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
 }

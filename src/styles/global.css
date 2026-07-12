@@ -1,11 +1,21 @@
 :root {
-  --primary-color: #2563eb;
-  --primary-hover-color: #1d4ed8;
-  --secondary-color: hsl(195, 63%, 30%);
-  --background-color: #021d30;
-  --surface-color: #ffffff;
-  --text-color: #334155;
-  --text-muted-color: #64748b;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-2: #27354d;
+  --primary: #38bdf8;
+  --text: #ffffff;
+  --text-secondary: #cbd5e1;
+  --radius: 12px;
+  --section-spacing: 8rem;
+
+  /* Compatibility aliases for existing component styles */
+  --primary-color: var(--primary);
+  --primary-hover-color: #7dd3fc;
+  --secondary-color: var(--text);
+  --background-color: var(--bg);
+  --surface-color: var(--text);
+  --text-color: var(--text-secondary);
+  --text-muted-color: #94a3b8;
 }
 
 * {
@@ -14,18 +24,44 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 38%),
+    var(--bg);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 a:hover {
   color: var(--primary-hover-color);
+}
+
+.content-card {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: linear-gradient(170deg, rgba(39, 53, 77, 0.8), rgba(30, 41, 59, 0.9));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --section-spacing: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 5rem;
+  }
 }
