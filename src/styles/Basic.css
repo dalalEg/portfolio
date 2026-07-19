@@ -13,7 +13,8 @@
 }
 
 .basic-information {
-  position: relative;
+    position: relative;
+  justify-content: center;
 }
 
 .basic-information::before {

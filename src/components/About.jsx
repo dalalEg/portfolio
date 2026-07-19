@@ -10,13 +10,14 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.4 }}
-    >
+    > 
+    <div className="content-card">
       <h2>About Me</h2>
 
       <p>
         Computer Science graduate from the Technion with experience
         building full-stack web applications, REST APIs, and software
-        systems. Skilled in Python, JavaScript, React, Django,
+        systems. Skilled in Python, C++, JavaScript, React, Django,
         PostgreSQL, Docker, and modern development workflows.
       </p>
 
@@ -25,6 +26,7 @@ export default function About() {
         and building software that combines strong engineering
         practices with excellent user experience.
       </p>
+    </div>
     </motion.section>
   );
 }

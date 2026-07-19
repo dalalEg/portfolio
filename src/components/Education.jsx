@@ -12,8 +12,9 @@ export default function Education() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.4 }}
     >
+            <article className="content-card">
+
       <h2>Education</h2>
-      <article className="content-card">
         <h3>{education.school}</h3>
         <p className="education-degree">{education.degree}</p>
         <h4>Relevant Coursework</h4>

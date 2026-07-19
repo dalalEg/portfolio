@@ -12,13 +12,15 @@ export default function Skills() {
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.4 }}
     >
-      <h2>Skills</h2>
+      <div className="content-card skills-card">
+        <h2>Skills</h2>
 
       <SkillCategory title="Languages" items={skills.languages} />
       <SkillCategory title="Frontend" items={skills.frontend} />
       <SkillCategory title="Backend" items={skills.backend} />
       <SkillCategory title="Database" items={skills.database} />
       <SkillCategory title="Tools" items={skills.tools} />
+      </div>
     </motion.section>
   );
 }

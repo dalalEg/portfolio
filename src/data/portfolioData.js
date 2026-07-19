@@ -198,6 +198,9 @@ export const projects = [
 
 export const experience = {
   title: "AI Training Engineer",
+  company: "Scale AI",
+  location: "Remote",
+  timeframe: "24 Nov - Jan 25",
   points: [
     "Evaluated AI-generated code and technical responses.",
     "Improved model quality through structured feedback.",
@@ -217,7 +220,7 @@ export const education = {
 };
 
 export const contact = {
-  email: "mailto:dalal.eghbaria@gmail.com",
+  email: "mailto:dalal.madrid.egb@gmail.com",
   github: "https://github.com/dalalEg",
   linkedin: "https://linkedin.com/in/dalal-eghbaria-a9283820a",
 };

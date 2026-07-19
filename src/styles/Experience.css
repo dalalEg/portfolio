@@ -1,7 +1,23 @@
 .experience {
   max-width: 1100px;
   margin: var(--section-spacing) auto 0;
-  padding: 0 24px;
+  padding: 50px 24px;
+}
+.experience {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.experience::before {
+  content: "";
+  position: absolute;
+  inset: 0 24px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: var(--radius);
+  background: linear-gradient(170deg, rgba(39, 53, 77, 0.8), rgba(30, 41, 59, 0.9));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .experience h2 {

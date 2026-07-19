@@ -12,15 +12,19 @@ export default function Experience() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.4 }}
     >
+    <div className="content-card">
       <h2>Experience</h2>
-      <article className="content-card">
         <h3>{experience.title}</h3>
+        <p className="experience-company">{experience.company}</p>
+        <p className="experience-location">{experience.location}</p>
+        <p className="experience-timeframe">{experience.timeframe}</p>
+        <h4>Key Responsibilities</h4>
         <ul>
           {experience.points.map((point) => (
-            <li key={point}>{point}</li>
+            <li key={point} className="experience-point">{point}</li>
           ))}
         </ul>
-      </article>
+    </div>
     </motion.section>
   );
 }
