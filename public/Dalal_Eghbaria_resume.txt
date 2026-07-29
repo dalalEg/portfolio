@@ -1,0 +1,26 @@
+Dalal Eghbaria
+Software Developer
+
+Summary
+Computer Science graduate with experience in web development, backend engineering, and software systems. Interested in building scalable, user-focused products using modern web technologies.
+
+Skills
+- Languages: Python, JavaScript, C++, C, SQL
+- Frontend: React, HTML, CSS, Axios, React Router
+- Backend: Django, Django REST Framework, REST APIs
+- Database: PostgreSQL, SQLite
+- Tools: Git, GitHub, Docker, Linux, Redis, Celery
+
+Experience
+AI Training Engineer
+- Evaluated AI-generated code and technical responses.
+- Improved model quality through structured feedback.
+- Worked across Python, C++, JavaScript, and software engineering tasks.
+
+Education
+B.Sc. Computer Science, Technion - Israel Institute of Technology
+
+Contact
+Email: dalal.eghbaria@gmail.com
+GitHub: https://github.com/dalalEg
+LinkedIn: https://linkedin.com/in/dalal-eghbaria-a9283820a

@@ -14,30 +14,43 @@ const sections = [
 export default function Navbar() {
   const [activeId, setActiveId] = useState("home");
 
+  const handleSectionClick = (sectionId) => {
+    setActiveId(sectionId);
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntry = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    const updateActiveSection = () => {
+      const offset = 140;
+      let currentSection = "home";
+      let smallestDistance = Number.POSITIVE_INFINITY;
 
-        if (visibleEntry) {
-          setActiveId(visibleEntry.target.id);
+      sections.forEach((section) => {
+        const element = document.getElementById(section.id);
+        if (!element) return;
+
+        const distance = Math.abs(element.getBoundingClientRect().top - offset);
+        if (distance < smallestDistance) {
+          smallestDistance = distance;
+          currentSection = section.id;
         }
-      },
-      {
-        root: null,
-        rootMargin: "-25% 0px -55% 0px",
-        threshold: [0.2, 0.4, 0.6],
-      }
-    );
+      });
 
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element) observer.observe(element);
-    });
+      setActiveId(currentSection);
+    };
 
-    return () => observer.disconnect();
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, []);
 
   return (
@@ -49,10 +62,17 @@ export default function Navbar() {
             key={section.id}
             href={`#${section.id}`}
             className={activeId === section.id ? "active" : ""}
+            onClick={(event) => {
+              event.preventDefault();
+              handleSectionClick(section.id);
+            }}
           >
             {section.label}
           </a>
         ))}
+        <a className="resume-link" href="/Dalal-Eghbaria.pdf" download>
+          Resume
+        </a>
       </nav>
     </header>
   );
