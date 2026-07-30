@@ -15,23 +15,26 @@ export default function Contact() {
       <article className="content-card contact-card">
         <h2>Let's Connect!</h2>
         <p>
-          I'm always open to discussing new projects, creative ideas, or
-          opportunities to be part of your visions. Feel free to reach out via
-          email or connect with me on GitHub and LinkedIn.  
+          I am open to discussing software engineering opportunities,
+          collaboration ideas, and interesting projects.
         </p>
-        You can click the links below to get in touch or download my resume for more details about my professional journey.
-        <a href={contact.email}> 📧 Email : dalal.eg@campus.technion.ac.il  </a>
-        <a href={contact.github} target="_blank" rel="noreferrer">
-          🐙 GitHub: dalalEg
-        </a>
-        <a href={contact.linkedin} target="_blank" rel="noreferrer">
-          🔗 LinkedIn: Dalal Eghbaria
-        </a>
-        <a href="/Dalal-Eghbaria.pdf" download>
-          📄 Download Resume
-        </a>
+        <p className="contact-subtext">
+          Reach out directly or explore my work through the links below.
+        </p>
+
+        <div className="contact-links" aria-label="Contact links">
+          <a href={contact.email}>📧 Email: dalal.eg@campus.technion.ac.il</a>
+          <a href={contact.github} target="_blank" rel="noreferrer">
+            🐙 GitHub: dalalEg
+          </a>
+          <a href={contact.linkedin} target="_blank" rel="noreferrer">
+            🔗 LinkedIn: Dalal Eghbaria
+          </a>
+          <a href={contact.resume} target="_blank" rel="noreferrer">
+            📄 Resume
+          </a>
+        </div>
       </article>
-     
     </motion.section>
   );
 }

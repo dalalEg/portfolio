@@ -97,6 +97,7 @@ export default function ProjectCard({ project, index }) {
                   alt={item.title}
                   loading="lazy"
                   decoding="async"
+                  fetchPriority="low"
                 />
               ) : (
                 <div className="gallery-frame" aria-hidden="true" />

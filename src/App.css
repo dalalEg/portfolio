@@ -6,3 +6,16 @@
   padding-bottom: 3rem;
   text-align: center;
 }
+
+.section-loading {
+  max-width: 1100px;
+  min-height: 140px;
+  margin: var(--section-spacing) auto 0;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .section-loading {
+    padding: 0 16px;
+  }
+}

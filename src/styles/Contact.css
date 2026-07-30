@@ -12,11 +12,27 @@
 
 .contact-card {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact-subtext {
+  font-size: 14px;
+}
+
+.contact-links {
+  display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.contact-card a {
+.contact-links a {
   border: 1px solid rgba(56, 189, 248, 0.45);
   border-radius: 999px;
   padding: 10px 16px;
@@ -25,7 +41,7 @@
   font-weight: 600;
 }
 
-.contact-card a:hover {
+.contact-links a:hover {
   background: var(--primary);
   color: #041321;
   transform: translateY(-2px);

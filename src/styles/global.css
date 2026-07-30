@@ -54,6 +54,15 @@ a:hover {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Improve initial rendering by deferring off-screen section layout and paint work. */
+.featured-project,
+.experience,
+.education,
+.contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 @media (max-width: 1024px) {
   :root {
     --section-spacing: 6rem;
