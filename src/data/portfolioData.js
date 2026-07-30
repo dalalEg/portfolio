@@ -1,7 +1,7 @@
 import movieDiscoveryScreenshot from "../assets/Screenshot 2025-09-18 201243.png";
 import SeatSelectionScreenshot from "../assets/SeatSelecting.png";
 import BookingCheckoutScreenshot from "../assets/BookingDeatails.png";
-import NotificationScreenshot from "../assets/Notification.png"
+import NotificationScreenshot from "../assets/notification.png"
 import BarcodeScreen from "../assets/Barcode-Cards.png";
 import HardwareStackScreen from "../assets/hardware.png";
 import Navigation from "../assets/sensorsAllocation.png";
