@@ -20,10 +20,13 @@ export default function BasicInformation() {
                 </p>
                 <div className="buttons">
                     <a href="https://github.com/dalalEg" target="_blank" rel="noreferrer">
-                        GitHub
+                       🐙 GitHub
                     </a>
                     <a href="https://linkedin.com/in/dalal-eghbaria-a9283820a" target="_blank" rel="noreferrer">
-                        LinkedIn
+                        💼 LinkedIn
+                    </a>
+                    <a href="/Dalal-Eghbaria.pdf" download>
+                        📄 Download Resume
                     </a>
                 </div>
             </div>

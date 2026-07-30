@@ -22,9 +22,9 @@ export default function About() {
       </p>
 
       <p>
-        I enjoy solving complex problems, designing scalable systems,
-        and building software that combines strong engineering
-        practices with excellent user experience.
+       I enjoy designing scalable systems, solving challenging problems,
+        and building reliable software with clean architecture and modern engineering
+         practices.
       </p>
     </div>
     </motion.section>

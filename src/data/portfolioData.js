@@ -1,7 +1,16 @@
 import movieDiscoveryScreenshot from "../assets/Screenshot 2025-09-18 201243.png";
 import SeatSelectionScreenshot from "../assets/SeatSelecting.png";
 import BookingCheckoutScreenshot from "../assets/BookingDeatails.png";
-
+import NotificationScreenshot from "../assets/Notification.png"
+import BarcodeScreen from "../assets/Barcode-Cards.png";
+import HardwareStackScreen from "../assets/hardware.png";
+import Navigation from "../assets/sensorsAllocation.png";
+import SoundFeedback from "../assets/Feedback.png";
+import AllPosts from "../assets/AllPosts.png";
+import Profile from "../assets/Profile.png";
+import Search from "../assets/EditPost.png";
+import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.png";
+import AddPost from "../assets/NewPost.png";
 export const skills = {
   languages: ["Python", "JavaScript", "C++", "C", "SQL"],
 
@@ -9,7 +18,6 @@ export const skills = {
     "React",
     "HTML",
     "CSS",
-    "Axios",
     "React Router"
   ],
 
@@ -26,21 +34,21 @@ export const skills = {
 
   tools: [
     "Git",
-    "GitHub",
     "Docker",
     "GitHub Actions",
     "Linux",
     "Redis",
-    "Celery"
+    "Celery",
+    "GitHub"
   ]
 };
 
 export const projects = [
   {
-    eyebrow: "Flagship Build",
+    eyebrow: "Featured Project",
     title: "Movie Theater Booking System",
     description:
-      "Full-stack booking platform for browsing movies, reserving seats, and managing booking lifecycle automation with production-style architecture.",
+      "Production-style full-stack movie booking platform featuring real-time seat reservation, booking lifecycle automation, REST APIs, and asynchronous background processing.",
     techStack: [
       "Django REST Framework",
       "React",
@@ -98,7 +106,7 @@ export const projects = [
         detail: "Payment and booking confirmation",
         image: BookingCheckoutScreenshot,
       },
-      { title: "Notifications", detail: "Reminders and activity timeline" },
+      { title: "Notifications", detail: "Reminders and activity timeline", image: NotificationScreenshot },
     ],
   },
   {
@@ -129,20 +137,24 @@ export const projects = [
     },
     galleryItems: [
       {
-        title: "Barcode Programming",
+        title: "Barcode Instruction Cards",
         detail: "Cards are scanned before run-time to set movement flow",
+        image: BarcodeScreen,
       },
       {
         title: "Maze Navigation",
         detail: "Real-world wall and junction decisions on hardware",
+        image: Navigation,
       },
       {
         title: "Interactive Behaviors",
-        detail: "Lighting, sound, and motion feedback",
+        detail: "Lighting, sound  feedback",
+        image: SoundFeedback,
       },
       {
         title: "Hardware Stack",
         detail: "ESP32 with sensors, motors, driver, and custom chassis",
+        image: HardwareStackScreen,
       },
     ],
   },
@@ -177,20 +189,24 @@ export const projects = [
     },
     galleryItems: [
       {
-        title: "All Posts Feed",
-        detail: "Reverse chronological stream with pagination",
+        title: "AddPost",
+        detail: "Create new posts with text and media",
+        image: AddPost,
       },
       {
         title: "Profile View",
         detail: "Follower/following counts and user activity",
+        image: Profile,
       },
       {
-        title: "Async Interactions",
-        detail: "Like, comment, and edit without page reload",
+        title: "Connections Suggestions",
+        detail: "Discover new users to follow randomly ",
+        image: ConnectionsSuggestions,
       },
       {
-        title: "Search",
-        detail: "Find users and posts by keyword",
+        title: "Edit Post",
+        detail: "Edit existing posts with text and media",
+        image: Search,
       },
     ],
   },
@@ -200,7 +216,7 @@ export const experience = {
   title: "AI Training Engineer",
   company: "Scale AI",
   location: "Remote",
-  timeframe: "24 Nov - Jan 25",
+  timeframe: "Nov 2024 – Jan 2025",
   points: [
     "Evaluated AI-generated code and technical responses.",
     "Improved model quality through structured feedback.",
@@ -216,11 +232,34 @@ export const education = {
     "Computer Networks",
     "Network Security",
     "Artificial Intelligence",
+    "Database",
+    "Algorithms and Data Structures",
+  ],
+  certifications: [
+    {
+      title: "edX Verified Certificate for CS50's Web Programming with Python and JavaScript",
+      issuer: "edX",
+      issued: "Nov 2025",
+      credentialId: "be096cd76ef143238d165449cbaf0361",
+      credentialUrl: "https://courses.edx.org/certificates/be096cd76ef143238d165449cbaf0361",
+      skills: [
+        "Full-Stack Development",
+        "CSS",
+        "Django",
+        "JavaScript",
+        "REST APIs",
+      ],
+      relatedLink: {
+        label: "Related GitHub Projects",
+        url: "https://github.com/dalalEg/CS50W",
+      },
+    },
   ],
 };
 
 export const contact = {
-  email: "mailto:dalal.madrid.egb@gmail.com",
+  email: "mailto:dalal.eg@campus.technion.ac.il",
   github: "https://github.com/dalalEg",
   linkedin: "https://linkedin.com/in/dalal-eghbaria-a9283820a",
+  resume: "https://drive.google.com/file/d/1g0k5r6J4X8F3G9K2L5H7J8K9L0M1N2O3/view?usp=sharing",
 };

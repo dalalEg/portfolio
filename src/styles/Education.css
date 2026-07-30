@@ -26,6 +26,10 @@
   margin-bottom: 10px;
 }
 
+.certifications-heading {
+  margin-top: 24px;
+}
+
 .course-grid {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +43,70 @@
   padding: 8px 12px;
   font-size: 13px;
   background: rgba(56, 189, 248, 0.08);
+}
+
+.certifications-list {
+  display: grid;
+  gap: 14px;
+}
+
+.edu-cert-card {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(15, 23, 42, 0.2);
+}
+
+.edu-cert-card h5 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.cert-meta {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.cert-id {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.cert-skills {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cert-skill-badge {
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.cert-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.cert-links a {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cert-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

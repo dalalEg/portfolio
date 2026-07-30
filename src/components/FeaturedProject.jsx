@@ -13,11 +13,13 @@ export default function FeaturedProject() {
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.45 }}
     >
+      < div className="content-card">
       <h2>Projects</h2>
 
       {projects.map((project, index) => (
         <ProjectCard key={project.title} project={project} index={index} />
       ))}
+      </div>
     </motion.section>
   );
 }
