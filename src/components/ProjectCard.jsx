@@ -91,7 +91,13 @@ export default function ProjectCard({ project, index }) {
           {project.galleryItems.map((item) => (
             <figure key={item.title} className="gallery-shot">
               {item.image ? (
-                <img className="gallery-image" src={item.image} alt={item.title} />
+                <img
+                  className="gallery-image"
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  decoding="async"
+                />
               ) : (
                 <div className="gallery-frame" aria-hidden="true" />
               )}
