@@ -6,7 +6,6 @@ import BarcodeScreen from "../assets/Barcode-Cards.png";
 import HardwareStackScreen from "../assets/hardware.png";
 import Navigation from "../assets/sensorsAllocation.png";
 import SoundFeedback from "../assets/Feedback.png";
-import AllPosts from "../assets/AllPosts.png";
 import Profile from "../assets/Profile.png";
 import Search from "../assets/EditPost.png";
 import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.png";
