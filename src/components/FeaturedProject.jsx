@@ -8,17 +8,17 @@ export default function FeaturedProject() {
     <motion.section
       id="projects"
       className="featured-project"
-      initial={{ opacity: 0, y: 20 }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.45 }}
     >
-      < div className="content-card">
-      <h2>Projects</h2>
+      <div className="content-card">
+        <h2>Projects</h2>
 
-      {projects.map((project, index) => (
-        <ProjectCard key={project.title} project={project} index={index} />
-      ))}
+        {projects.map((project, index) => (
+          <ProjectCard key={project.title} project={project} index={index} />
+        ))}
       </div>
     </motion.section>
   );
