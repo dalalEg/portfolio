@@ -1,15 +1,15 @@
-import movieDiscoveryScreenshot from "../assets/Screenshot 2025-09-18 201243.png";
-import SeatSelectionScreenshot from "../assets/SeatSelecting.png";
-import BookingCheckoutScreenshot from "../assets/BookingDeatails.png";
-import NotificationScreenshot from "../assets/notification.png"
-import BarcodeScreen from "../assets/Barcode-Cards.png";
-import HardwareStackScreen from "../assets/hardware.png";
-import Navigation from "../assets/sensorsAllocation.png";
-import SoundFeedback from "../assets/Feedback.png";
-import Profile from "../assets/Profile.png";
-import Search from "../assets/EditPost.png";
-import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.png";
-import AddPost from "../assets/NewPost.png";
+import movieDiscoveryScreenshot from "../assets/Screenshot 2025-09-18 201243.webp";
+import SeatSelectionScreenshot from "../assets/SeatSelecting.webp";
+import BookingCheckoutScreenshot from "../assets/BookingDeatails.webp";
+import NotificationScreenshot from "../assets/notification.webp";
+import BarcodeScreen from "../assets/Barcode-Cards.webp";
+import HardwareStackScreen from "../assets/hardware.webp";
+import Navigation from "../assets/sensorsAllocation.webp";
+import SoundFeedback from "../assets/Feedback.webp";
+import Profile from "../assets/Profile.webp";
+import Search from "../assets/EditPost.webp";
+import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.webp";
+import AddPost from "../assets/NewPost.webp";
 export const skills = {
   languages: ["Python", "JavaScript", "C++", "C", "SQL"],
 
