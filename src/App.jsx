@@ -3,6 +3,7 @@ import { Suspense, lazy } from "react";
 
 import Navbar from "./components/Navbar";
 import BasicInformation from "./components/Basic information";
+import Footer from "./components/Footer";
 
 const About = lazy(() => import("./components/About"));
 const Skills = lazy(() => import("./components/Skills"));
@@ -37,6 +38,7 @@ function App() {
       <Suspense fallback={sectionFallback}>
         <Contact />
       </Suspense>
+      <Footer />
     </div>
   );
 }

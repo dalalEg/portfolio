@@ -10,6 +10,7 @@ import Profile from "../assets/Profile.webp";
 import Search from "../assets/EditPost.webp";
 import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.webp";
 import AddPost from "../assets/NewPost.webp";
+import { title } from "framer-motion/client";
 export const skills = {
   languages: ["Python", "JavaScript", "C++", "C", "SQL"],
 
@@ -104,6 +105,9 @@ export const projects = [
         title: "Booking Checkout",
         detail: "Payment and booking confirmation",
         image: BookingCheckoutScreenshot,
+      },
+      {title: "Notifications", detail: "Reminders and activity timeline", image: NotificationScreenshot
+        
       },
       { title: "Notifications", detail: "Reminders and activity timeline", image: NotificationScreenshot },
     ],

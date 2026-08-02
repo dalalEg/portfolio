@@ -1,16 +1,89 @@
-# React + Vite
+# Dalal Eghbaria Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal software engineering portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Production: https://portfolio-git-main-dalalegs-projects.vercel.app/
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights:
 
-## Expanding the ESLint configuration
+- Featured full-stack and systems projects
+- Technical skills across frontend, backend, database, and tools
+- Professional experience and education
+- Contact details and resume access
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 19
+- Vite 8
+- Framer Motion
+- CSS (component-level + global styles)
+
+## Key Features
+
+- Responsive one-page layout with clear section navigation
+- Project cards with metrics, architecture flow, and gallery items
+- Data-driven content from a single source file
+- SEO metadata (Open Graph, Twitter, canonical, JSON-LD)
+- Performance optimizations:
+	- Lazy-loaded below-the-fold sections
+	- Lazy-loaded gallery images
+	- WebP image conversion for large assets
+
+## Project Structure
+
+```
+src/
+	components/
+	data/
+		portfolioData.js
+	styles/
+	assets/
+public/
+index.html
+```
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Preview production build
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+This project is deployed on Vercel.
+
+Recommended settings:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Node version: `>=20.19.0`
+
+## Contact
+
+- GitHub: https://github.com/dalalEg
+- LinkedIn: https://linkedin.com/in/dalal-eghbaria-a9283820a
+- Email: dalal.eg@campus.technion.ac.il
