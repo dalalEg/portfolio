@@ -22,7 +22,7 @@ export default function Experience() {
             <span className="experience-badge">{experience.timeframe}</span>
           </div>
 
-          <h4>Highlights</h4>
+          <h4>Key Responsibilities:</h4>
           <ul className="experience-list">
             {experience.points.map((point) => (
               <li key={point} className="experience-point">

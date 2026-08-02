@@ -1,10 +1,18 @@
 # Dalal Eghbaria Portfolio
 
-Personal software engineering portfolio built with React and Vite.
-
+A modern, responsive software engineering portfolio built with React, Vite, and Framer Motion to showcase projects, technical skills, and professional experience.
 ## Live Site
 
 - Production: https://portfolio-git-main-dalalegs-projects.vercel.app/
+
+## Lighthouse Results (Desktop)
+
+Measured with Chrome DevTools Lighthouse (Aug 2026):
+
+- Performance: 100
+- Accessibility: 96
+- Best Practices: 100
+- SEO: 100
 
 ## Overview
 
