@@ -10,7 +10,7 @@ import Profile from "../assets/Profile.webp";
 import Search from "../assets/EditPost.webp";
 import ConnectionsSuggestions from "../assets/ConnectionsSuggestions.webp";
 import AddPost from "../assets/NewPost.webp";
-import { title } from "framer-motion/client";
+
 export const skills = {
   languages: ["Python", "JavaScript", "C++", "C", "SQL"],
 
@@ -49,6 +49,8 @@ export const projects = [
     title: "Movie Theater Booking System",
     description:
       "Production-style full-stack movie booking platform featuring real-time seat reservation, booking lifecycle automation, REST APIs, and asynchronous background processing.",
+    engineeringChallenge:
+      "Preventing double booking required server-side validation and atomic reservation logic to keep seat availability consistent under concurrent requests.",
     techStack: [
       "Django REST Framework",
       "React",
@@ -88,7 +90,7 @@ export const projects = [
     links: {
       github: "https://github.com/dalalEg/CS50W",
       liveDemo: "https://dali-movie-theater.netlify.app",
-      learnMore: "https://youtu.be/YrqwYAZTVQ8?si=2Mfxi42zWNURMIaX",
+      videoDemo: "https://youtu.be/YrqwYAZTVQ8?si=2Mfxi42zWNURMIaX",
     },
     galleryItems: [
       {
@@ -106,9 +108,6 @@ export const projects = [
         detail: "Payment and booking confirmation",
         image: BookingCheckoutScreenshot,
       },
-      {title: "Notifications", detail: "Reminders and activity timeline", image: NotificationScreenshot
-        
-      },
       { title: "Notifications", detail: "Reminders and activity timeline", image: NotificationScreenshot },
     ],
   },
@@ -117,6 +116,8 @@ export const projects = [
     title: "Robotic Maze Solver (Coding Minion)",
     description:
       "Autonomous robot that navigates a maze using barcode-driven instructions, sensor input, and embedded path logic on ESP32.",
+    engineeringChallenge:
+      "Reliable maze navigation required combining sensor input with barcode-driven commands while maintaining stable movement and turn accuracy on embedded hardware.",
     techStack: ["C++", "Sensors", "Algorithms", "IoT", "ESP32"],
     keyFeatures: [
       "Barcode-driven offline programming using color cards",
@@ -135,7 +136,7 @@ export const projects = [
       github: "https://github.com/Nadeen145/Coding-Minion-IOT",
       liveDemo:
         "https://www.dropbox.com/scl/fi/y2xssjx69hejrivqjxy7q/Coding-Minion.mp4?rlkey=mbwz7omu8md29fg1xs7ji59vn&dl=0",
-      learnMore:
+      videoDemo:
         "https://www.youtube.com/watch?v=xytOwOuyp5M",
     },
     galleryItems: [
@@ -151,7 +152,7 @@ export const projects = [
       },
       {
         title: "Interactive Behaviors",
-        detail: "Lighting, sound  feedback",
+        detail: "Lighting and sound feedback",
         image: SoundFeedback,
       },
       {
@@ -166,6 +167,8 @@ export const projects = [
     title: "CS50 Social Network",
     description:
       "Social platform supporting posts, follows, likes, editing, comments, and paginated feeds with asynchronous interactions.",
+    engineeringChallenge:
+      "Building smooth social interactions required coordinating asynchronous UI updates for likes, comments, follows, and post edits without full page reloads.",
     techStack: [
       "Django",
       "JavaScript",
@@ -188,11 +191,11 @@ export const projects = [
     ],
     links: {
       github: "https://github.com/dalalEg/CS50W/tree/main/project4",
-      learnMore: "https://www.youtube.com/watch?v=TELOnfr8meY",
+      videoDemo: "https://www.youtube.com/watch?v=TELOnfr8meY",
     },
     galleryItems: [
       {
-        title: "AddPost",
+        title: "New Post",
         detail: "Create new posts with text and media",
         image: AddPost,
       },
@@ -203,7 +206,7 @@ export const projects = [
       },
       {
         title: "Connections Suggestions",
-        detail: "Discover new users to follow randomly ",
+        detail: "Discover new users to follow",
         image: ConnectionsSuggestions,
       },
       {

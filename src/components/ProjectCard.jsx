@@ -25,6 +25,13 @@ export default function ProjectCard({ project, index }) {
         ))}
       </div>
 
+      {project.engineeringChallenge ? (
+        <div className="project-challenge">
+          <h4>Engineering Challenge</h4>
+          <p>{project.engineeringChallenge}</p>
+        </div>
+      ) : null}
+
       {project.architecture ? (
         <div className="architecture-grid" aria-label={`${project.title} architecture diagram`}>
           {project.architecture.map((node, architectureIndex) => {
@@ -79,9 +86,9 @@ export default function ProjectCard({ project, index }) {
             Live Demo
           </a>
         ) : null}
-        {project.links.learnMore ? (
-          <a href={project.links.learnMore} target="_blank" rel="noreferrer">
-            Learn More
+        {project.links.videoDemo ? (
+          <a href={project.links.videoDemo} target="_blank" rel="noreferrer">
+            Video Demo
           </a>
         ) : null}
       </div>

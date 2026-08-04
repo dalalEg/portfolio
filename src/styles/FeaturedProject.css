@@ -60,6 +60,25 @@
   margin-bottom: 24px;
 }
 
+.project-challenge {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 24px;
+  background: rgba(15, 23, 42, 0.44);
+}
+
+.project-challenge h4 {
+  color: var(--text);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-challenge p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
 .tech-badge {
   border: 1px solid rgba(56, 189, 248, 0.45);
   border-radius: 999px;
@@ -167,6 +186,8 @@
   color: var(--primary);
   border-radius: 8px;
   padding: 10px 16px;
+  min-width: 116px;
+  text-align: center;
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 

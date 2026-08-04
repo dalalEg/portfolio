@@ -30,7 +30,7 @@
 }
 
 .experience-badge {
-  margin-left: 25%;
+  margin: 0;
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid rgba(56, 189, 248, 0.45);

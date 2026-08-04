@@ -1,6 +1,7 @@
 # Dalal Eghbaria Portfolio
 
 A modern, responsive software engineering portfolio built with React, Vite, and Framer Motion to showcase projects, technical skills, and professional experience.
+
 ## Live Site
 
 - Production: https://dalalportfolio.netlify.app/
@@ -37,19 +38,19 @@ This portfolio highlights:
 - Data-driven content from a single source file
 - SEO metadata (Open Graph, Twitter, canonical, JSON-LD)
 - Performance optimizations:
-	- Lazy-loaded below-the-fold sections
-	- Lazy-loaded gallery images
-	- WebP image conversion for large assets
+  - Lazy-loaded below-the-fold sections
+  - Lazy-loaded gallery images
+  - WebP image conversion for large assets
 
 ## Project Structure
 
 ```
 src/
-	components/
-	data/
-		portfolioData.js
-	styles/
-	assets/
+  components/
+  data/
+    portfolioData.js
+  styles/
+  assets/
 public/
 index.html
 ```
@@ -82,7 +83,7 @@ npm run preview
 
 ## Deployment
 
-This project is deployed on Vercel.
+This project is deployed on Netlify.
 
 Recommended settings:
 
