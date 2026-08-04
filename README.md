@@ -3,7 +3,7 @@
 A modern, responsive software engineering portfolio built with React, Vite, and Framer Motion to showcase projects, technical skills, and professional experience.
 ## Live Site
 
-- Production: https://portfolio-git-main-dalalegs-projects.vercel.app/
+- Production: https://dalalportfolio.netlify.app/
 
 ## Lighthouse Results (Desktop)
 
